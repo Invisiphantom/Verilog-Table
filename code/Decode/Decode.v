@@ -12,7 +12,7 @@ module Decode #(
                 if (in == i) out[i] = 1'b1;
                 else out[i] = 1'b0;
             end
-        end else out = {(1 << LEN){1'b0}};
+        end else out = {(1 << LEN) {1'b0}};
     end
 endmodule
 
