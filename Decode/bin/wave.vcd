@@ -1,0 +1,54 @@
+$date
+	Wed Feb 28 10:16:02 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Decode24_tb $end
+$var wire 4 ! out_w [3:0] $end
+$var reg 1 " en_r $end
+$var reg 2 # in_r [1:0] $end
+$scope module uut $end
+$var wire 1 " en $end
+$var wire 2 $ in [1:0] $end
+$var reg 4 % out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx %
+bx $
+bx #
+x"
+bx !
+$end
+#10
+b0 !
+b0 %
+b0 #
+b0 $
+0"
+#20
+b1 !
+b1 %
+1"
+#30
+b10 !
+b10 %
+b1 #
+b1 $
+#40
+b100 !
+b100 %
+b10 #
+b10 $
+#50
+b1000 !
+b1000 %
+b11 #
+b11 $
+#60

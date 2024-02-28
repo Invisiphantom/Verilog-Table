@@ -15,3 +15,55 @@ module Encode42 (
         end else out = 2'b00;
     end
 endmodule
+
+module Encode42_tb;
+    reg en;
+    reg [3:0] in;
+    wire [1:0] out;
+
+    Encode42 DUT (
+        .en (en),
+        .in (in),
+        .out(out)
+    );
+
+    initial begin
+        #10 begin
+            en = 1'b0;
+            in = 4'b0000;
+        end
+
+        #10 begin
+            en = 1'b1;
+            in = 4'b0001;
+        end
+
+        #10 begin
+            en = 1'b1;
+            in = 4'b0010;
+        end
+
+        #10 begin
+            en = 1'b1;
+            in = 4'b0100;
+        end
+
+        #10 begin
+            en = 1'b1;
+            in = 4'b1000;
+        end
+
+        #10 begin
+            en = 1'b1;
+            in = 4'b1111;
+        end
+
+        #10 begin
+        end
+    end
+
+    initial begin
+        $dumpfile("wave.vcd");
+        $dumpvars;
+    end
+endmodule
