@@ -14,16 +14,47 @@ endmodule
 
 
 module SR_Latch_tb ();
-    reg R, S;
+    reg S, R;
     wire Q, Q_n;
     SR_Latch SR_Latch_0 (
-        R,
-        S,
-        Q,
-        Q_n
+        .S  (S),
+        .R  (R),
+        .Q  (Q),
+        .Q_n(Q_n)
     );
 
     initial begin
-        
+        #10 begin // invalid
+            S = 0;
+            R = 0;
+        end
+
+        #10 begin // set
+            S = 0;
+            R = 1;
+        end
+
+        #10 begin // hold
+            S = 1;
+            R = 1;
+        end
+
+        #10 begin // reset
+            S = 1;
+            R = 0;
+        end
+
+        #10 begin // hold
+            S = 1;
+            R = 1;
+        end
+
+        #10 begin
+        end
+    end
+
+    initial begin
+        $dumpfile("wave.vcd");
+        $dumpvars;
     end
 endmodule

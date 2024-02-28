@@ -1,0 +1,94 @@
+$date
+	Wed Feb 28 14:29:36 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module D_Flipflop_MS_tb $end
+$var wire 1 ! Q $end
+$var reg 1 " D $end
+$var reg 1 # clk $end
+$scope module D_Flipflop_MS $end
+$var wire 1 " D $end
+$var wire 1 # clk $end
+$var wire 1 $ Q_t $end
+$var wire 1 ! Q $end
+$scope module DL1 $end
+$var wire 1 " D $end
+$var wire 1 % R $end
+$var wire 1 & S $end
+$var wire 1 ' en $end
+$var wire 1 $ Q $end
+$scope module u_SR_Latch $end
+$var wire 1 $ Q $end
+$var wire 1 ( Q_n $end
+$var wire 1 % R $end
+$var wire 1 & S $end
+$upscope $end
+$upscope $end
+$scope module DL2 $end
+$var wire 1 $ D $end
+$var wire 1 ) R $end
+$var wire 1 * S $end
+$var wire 1 # en $end
+$var wire 1 ! Q $end
+$scope module u_SR_Latch $end
+$var wire 1 ! Q $end
+$var wire 1 + Q_n $end
+$var wire 1 ) R $end
+$var wire 1 * S $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#10
+0$
+1(
+0%
+1&
+1'
+1*
+1)
+0"
+0#
+#30
+0!
+1%
+1+
+0'
+0)
+1#
+#40
+0(
+1$
+0&
+1'
+1)
+1"
+0#
+#60
+0+
+1&
+1!
+0'
+0*
+1#
+#70
