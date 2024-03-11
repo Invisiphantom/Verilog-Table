@@ -19,63 +19,63 @@ endmodule
 
 
 
-module AdderAhead_1_tb;
-    reg  a_i;
-    reg  b_i;
-    reg  cin_i;
-    wire sum_o;
-    wire cout_o;
-    wire g1_o;
-    wire p1_o;
+// module AdderAhead_1_tb;
+//     reg  a_i;
+//     reg  b_i;
+//     reg  cin_i;
+//     wire sum_o;
+//     wire cout_o;
+//     wire g1_o;
+//     wire p1_o;
 
-    AdderAhead_1 AA1 (
-        .a_i(a_i),
-        .b_i(b_i),
-        .cin_i(cin_i),
-        .sum_o(sum_o),
-        .cout_o(cout_o),
-        .g1_o(g1_o),
-        .p1_o(p1_o)
-    );
+//     AdderAhead_1 AA1 (
+//         .a_i(a_i),
+//         .b_i(b_i),
+//         .cin_i(cin_i),
+//         .sum_o(sum_o),
+//         .cout_o(cout_o),
+//         .g1_o(g1_o),
+//         .p1_o(p1_o)
+//     );
 
-    initial begin
-        #10 begin  // 0+0+0=00
-            a_i   = 1'b0;
-            b_i   = 1'b0;
-            cin_i = 1'b0;
-        end
+//     initial begin
+//         #10 begin  // 0+0+0=00
+//             a_i   = 1'b0;
+//             b_i   = 1'b0;
+//             cin_i = 1'b0;
+//         end
 
-        #10 begin  // 1+0+0=01
-            a_i   = 1'b1;
-            b_i   = 1'b0;
-            cin_i = 1'b0;
-        end
+//         #10 begin  // 1+0+0=01
+//             a_i   = 1'b1;
+//             b_i   = 1'b0;
+//             cin_i = 1'b0;
+//         end
 
-        #10 begin  // 0+1+0=01
-            a_i   = 1'b0;
-            b_i   = 1'b1;
-            cin_i = 1'b0;
-        end
+//         #10 begin  // 0+1+0=01
+//             a_i   = 1'b0;
+//             b_i   = 1'b1;
+//             cin_i = 1'b0;
+//         end
 
-        #10 begin  // 1+1+0=10
-            a_i   = 1'b1;
-            b_i   = 1'b1;
-            cin_i = 1'b0;
-        end
+//         #10 begin  // 1+1+0=10
+//             a_i   = 1'b1;
+//             b_i   = 1'b1;
+//             cin_i = 1'b0;
+//         end
 
-        #10 begin  // 1+1+1=11
-            a_i   = 1'b1;
-            b_i   = 1'b1;
-            cin_i = 1'b1;
-        end
+//         #10 begin  // 1+1+1=11
+//             a_i   = 1'b1;
+//             b_i   = 1'b1;
+//             cin_i = 1'b1;
+//         end
 
-        #10 begin
-        end
-    end
+//         #10 begin
+//         end
+//     end
 
-    initial begin
-        $dumpfile("wave.vcd");
-        $dumpvars;
-    end
+//     initial begin
+//         $dumpfile("wave.vcd");
+//         $dumpvars;
+//     end
 
-endmodule
+// endmodule
